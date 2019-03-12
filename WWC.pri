@@ -2,8 +2,6 @@
 
 
 HEADERS += \
-    #$$PWD/src/Component/setupable.h \
-    #$$PWD/src/Component/setconf.h\
     $$PWD/WWC/WWC.h
 
 SOURCES += \
