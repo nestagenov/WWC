@@ -1,4 +1,4 @@
-#include "setupable.h"
+#include "Setupable.h"
 
 
 void Setupable::saveDefaultConfig()

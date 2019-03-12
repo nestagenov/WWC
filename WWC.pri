@@ -5,7 +5,7 @@ HEADERS += \
     $$PWD/WWC/WWC.h
 
 SOURCES += \
-    $$PWD/WWC/src/Component/setupable.cpp
+    $$PWD/WWC/src/setupable.cpp
 
 
 

@@ -26,8 +26,8 @@ SOURCES +=
 
 HEADERS += \
     WWC/WWC.h \
-    WWC/src/Component/setupable.h \
-    WWC/src/Component/setconf.h
+    WWC/header/Setupable.h \
+    WWC/header/SetConf.h
  
 unix {
     target.path = /usr/lib

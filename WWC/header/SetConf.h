@@ -3,7 +3,7 @@
 
 
 #include <QSettings>
-#include "setupable.h"
+#include "Setupable.h"
 
 
 
