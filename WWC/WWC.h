@@ -1,7 +1,7 @@
 #ifndef STATHEADERONLYLIB_H
 #define STATHEADERONLYLIB_H
 
-#include "src/header/SetConf.h"
-#include "src/header/Setupable.h"
-#include "src/QtSettings.h"
+#include "header/SetConf.h"
+#include "header/Setupable.h"
+#include "QtSettings.h"
 #endif // STATHEADERONLYLIB_H
