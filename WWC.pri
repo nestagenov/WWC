@@ -4,15 +4,15 @@
 HEADERS += \
     #$$PWD/src/Component/setupable.h \
     #$$PWD/src/Component/setconf.h\
-    $$PWD/src/WWC.h
+    $$PWD/WWC/WWC.h
 
 SOURCES += \
-    $$PWD/src/Component/setupable.cpp
+    $$PWD/WWC/src/Component/setupable.cpp
 
 
 
-INCLUDEPATH += $$PWD/../../QtProgect/WWC/src
-DEPENDPATH += $$PWD/../../QtProgect/WWC/src
+INCLUDEPATH += $$PWD/../../QtProgect/WWC/WWC
+DEPENDPATH += $$PWD/../../QtProgect/WWC/WWC
 
 LIBS +=
 
