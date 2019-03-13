@@ -1,5 +1,5 @@
-#ifndef SETTINGS_H
-#define SETTINGS_H
+#ifndef SETCONF_H
+#define SETCONF_H
 
 
 #include <QSettings>
@@ -16,9 +16,7 @@ public:
     explicit SetConfig(QObject * parent = nullptr)
         : QObject(parent)
     {
-
         this->settings = new G(T::path, ISettings::NativeFormat);
-        //this->settings->setIniCodec("UTF-8");
     }
 
 
@@ -64,4 +62,4 @@ private:
 
 
 
-#endif // SETTINGS_H
+#endif // SETCONF_H

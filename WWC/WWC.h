@@ -1,7 +1,7 @@
-#ifndef STATHEADERONLYLIB_H
-#define STATHEADERONLYLIB_H
+#ifndef WWC_H
+#define WWC_H
 
 #include "header/SetConf.h"
 #include "header/Setupable.h"
-#include "QtSettings.h"
-#endif // STATHEADERONLYLIB_H
+#include "header/QtSettings.h"
+#endif // WWC_H

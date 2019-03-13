@@ -1,5 +1,5 @@
-#ifndef MYSETTINGS_H
-#define MYSETTINGS_H
+#ifndef QTSETTINGS_H
+#define QTSETTINGS_H
 #include "ISettings.h"
 
 #include <QSettings>
@@ -74,4 +74,4 @@ private:
 
 
 
-#endif // MYSETTINGS_H
+#endif // QTSETTINGS_H
