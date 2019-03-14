@@ -5,12 +5,12 @@ HEADERS += \
     $$PWD/WWC/WWC.h
 
 SOURCES += \
-    $$PWD/WWC/src/setupable.cpp
+    $$PWD/WWC/Setupable.cpp
 
 
 
-INCLUDEPATH += $$PWD/../../QtProgect/WWC/WWC
-DEPENDPATH += $$PWD/../../QtProgect/WWC/WWC
+INCLUDEPATH += $$PWD/../WWC/WWC
+DEPENDPATH += $$PWD/../WWC/WWC
 
 LIBS +=
 
