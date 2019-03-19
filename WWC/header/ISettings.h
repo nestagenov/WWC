@@ -13,10 +13,7 @@ public:
         NativeFormat,
         IniFormat,
 
-#ifdef Q_OS_WIN
-        Registry32Format,
-        Registry64Format
-#endif
+
     };
 
 
