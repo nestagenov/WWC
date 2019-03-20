@@ -16,6 +16,9 @@ public:
     void setOne(int);
     void setTwo(bool);
 
+    int getOne();
+    bool getTwo();
+
 private:
 
     QMap<QString, QVariant> defaulConfigValues = {

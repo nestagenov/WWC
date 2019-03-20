@@ -16,6 +16,16 @@ void checkWWC::setTwo(bool value)
     this->two = value;
 }
 
+int checkWWC::getOne()
+{
+    return this->one;
+}
+
+bool checkWWC::getTwo()
+{
+    return this->two;
+}
+
 void checkWWC::saveConfig()
 {
     if (not settings())
@@ -23,6 +33,7 @@ void checkWWC::saveConfig()
     settings()->setValue("SomeParameter1", 1024);
     settings()->setValue("SomeParameter2", false);
     settings()->sync();
+
 }
 
 void checkWWC::setupConfig()

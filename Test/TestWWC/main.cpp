@@ -6,8 +6,12 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    checkWWC t = checkWWC();
-    t.saveConfig();
-    qDebug() << "stop"<<endl;
+    checkWWC example1 = checkWWC();
+    qDebug() << example1.getOne() << " "<< example1.getTwo() <<endl;
+    example1.saveConfig();
+    checkWWC example2 = checkWWC();
+    qDebug() << example2.getOne() << " "<< example2.getTwo() <<endl;
+
+
     return a.exec();
 }
