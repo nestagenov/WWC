@@ -1,5 +1,5 @@
-#ifndef SETCONF_H
-#define SETCONF_H
+#ifndef MANAGER_H
+#define MANAGER_H
 
 
 #include <QSettings>
@@ -7,20 +7,21 @@
 
 
 
-template<typename T, typename G>
-class SetConfig
+template<typename Config, typename Object>
+class Manager
         : public QObject
 {
 
 public:
-    explicit SetConfig(QObject * parent = nullptr)
+    explicit Manager(QObject * parent = nullptr)
         : QObject(parent)
     {
-        this->settings = new G(T::path, ISettings::NativeFormat);
+
+        this->settings = new Object(Config::name, ISettings::NativeFormat);
     }
 
 
-    ~SetConfig()
+    ~Manager()
     {
         this->settings->sync();
         for (auto && object : this->objects)
@@ -36,13 +37,13 @@ public:
     }
 
 
-    static SetConfig<T, G> * servTo(Setupable *  object, const QMap<QString, QVariant> * defaultConfigValues)
+    static Manager<Config, Object> * servTo(Setupable *  object, const QMap<QString, QVariant> * defaultConfigValues)
     {
-        static SetConfig<T, G> * t{nullptr};
+        static Manager<Config, Object> * t{nullptr};
 
         if (!t)
         {
-            t = new SetConfig<T, G>(nullptr);
+            t = new Manager<Config, Object>(nullptr);
         }
 
         object->set(t->settings, defaultConfigValues);
@@ -62,4 +63,4 @@ private:
 
 
 
-#endif // SETCONF_H
+#endif // MANAGER_H

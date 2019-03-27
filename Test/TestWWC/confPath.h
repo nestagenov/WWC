@@ -3,7 +3,7 @@
 
 struct confPath
 {
-    static constexpr auto path = "someConf.ini";
+    static constexpr auto name = "someConf.ini";
 };
 
 #endif // CONFIGPATH_H

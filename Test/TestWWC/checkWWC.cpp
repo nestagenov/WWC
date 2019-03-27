@@ -2,7 +2,7 @@
 
 checkWWC::checkWWC()
 {
-    SetConfig<confPath, QtSettings>::servTo(this, &defaulConfigValues);
+    Manager<confPath, QtSettings>::servTo(this, &defaulConfigValues);
 }
 
 

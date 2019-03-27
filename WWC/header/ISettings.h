@@ -12,8 +12,6 @@ public:
     enum Format {
         NativeFormat,
         IniFormat,
-
-
     };
 
 
