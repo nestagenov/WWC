@@ -25,46 +25,40 @@ public:
 
     void setValue(const QString &key, const QVariant &value) override
     {
-        setSettings()->setValue(key, value);
+        my_settings->setValue(key, value);
     }
 
     QVariant value(const QString &key, const QVariant &defaultValue = QVariant()) const override
     {
-        return setSettings()->value(key, defaultValue);
+        return my_settings->value(key, defaultValue);
     }
 
      bool contains(const QString &key) const override
     {
-        return setSettings()->contains(key);
+        return my_settings->contains(key);
     }
 
      void sync() override
     {
-        setSettings()->sync();
+        my_settings->sync();
     }
 
     void setIniCodec(const char * codecName) override
     {
-        setSettings()->setIniCodec(codecName);
+       my_settings->setIniCodec(codecName);
     }
 
      void beginGroup(const QString &prefix) override
     {
-        setSettings()->beginGroup(prefix);
+        my_settings->beginGroup(prefix);
     }
 
      void endGroup() override
     {
-        setSettings()->endGroup();
+        this->my_settings->endGroup();
     }
 
 
-
-private:
-    QSettings * setSettings() const
-    {
-        return my_settings;
-    }
 
 private:
   QSettings * my_settings = nullptr;
